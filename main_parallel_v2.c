@@ -10,7 +10,7 @@
 #define ROOT 0
 
 #define LOOP_1ST 0 ////set 1 to eneble loop all
-int START_CITIES=0; //start with 0 to n-1
+int START_CITIES=9; //start with 0 to n-1
 
 /* MODE_SEND 0 = send Dist by Bcast       | MODE_SEND 1 = send Dist by Ibcast
    MODE_SEND 2 = send Dist by Send & Recv | MODE_SEND 3 = send Dist by Isend & Irecv */
