@@ -9,7 +9,7 @@
 #define INFINITE INT_MAX    // a large constant used to initiation
 #define ROOT 0  // define what is the ROOT processor of the program
 
-#define LOOP_1ST 0 ////set 1 to eneble loop all start city from START_CITIES to n
+#define LOOP_1ST 0 //set 1 to eneble loop all start city from START_CITIES to n
 int START_CITIES=9; //start with 0 to n-1
 
 /* MODE_SEND 0 = send Dist by Bcast       | MODE_SEND 1 = send Dist by Ibcast
@@ -77,7 +77,7 @@ int main(int argc, char *argv[]) {
             if(PRINT_ALL==1) if(LOOP_1ST==1) printf("Start with City %d \n", START_CITIES);
         }
 
-        double start_time1 = MPI_Wtime();   //totle time
+        double start_time1 = MPI_Wtime();   //total time
 
         MPI_Request request1, request2;
 
@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
             while (myArg[strlen(myArg)-1] == '\'') myArg[strlen(myArg)-1] = '\0';   // filter some input mistake at the last of file name
             file_path = myArg;
         }else{  // if there are no input of filename
-            char *df_file = "input/dist4";
+            char *df_file = "input/dist10";
             if(PRINT_ALL==1) if (rank==ROOT) printf("    [ROOT] The default file (%s) will be used if no input is provided  \n", df_file);
             file_path  = df_file;
         }
@@ -472,6 +472,7 @@ void save_result(int rank, int size, double total_computing_time, double sending
     /* free memory */
     free(result);
 }
+
 /*  This function saves WSP results to a .csv file. */
 void save_result_csv(double index_time, int rank, char *dist_file, double total_computing_time, double sending_time, double BaB_computing_time, double gathering_time, double count_bab, double r_best_bound, double r_best_path) {
     FILE *file;
