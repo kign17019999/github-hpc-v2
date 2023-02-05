@@ -24,7 +24,7 @@ double power(double base, int exponent);
     - Calls get_cities_info to parse the distance information of the cities
     - Calls branch_and_bound to find the shortest path that visits all cities
     - Prints the best path, the best path distance and the computing time
-    - Saves the result in a file named after the input file and computing time 
+    - Saves the result in a file
 */
 int main(int argc, char *argv[]) {
     clock_t start = clock();
@@ -107,7 +107,8 @@ void get_cities_info(char* file_path) {
     path: array to store the order of visiting cities
     path_bound: current bound of the path
     visited: array to store the visited status of the cities
-    level: current level (city) of visiting */
+    level: current level (city) of visiting
+*/
 void branch_and_bound(int *path, int path_bound, int *visited, int level) {
     if (level == n) {   // check that the travelling is going to the end of path or not
         if (path_bound < best_path_bound) { //check the new path is better than the previous best or not
