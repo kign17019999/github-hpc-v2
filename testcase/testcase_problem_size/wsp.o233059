@@ -1,0 +1,36 @@
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 115 | total time = 0.009892 s | path = 1 4 5 2 3 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 237 | total time = 1.301576 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 2 7 12 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 260 | total time = 25.878343 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 115 | total time = 0.009057 s | path = 1 4 5 2 3 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 237 | total time = 0.946036 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 2 7 12 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 260 | total time = 16.496917 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 115 | total time = 0.033174 s | path = 1 4 5 2 3 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 237 | total time = 1.340622 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 2 7 12 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 260 | total time = 25.902403 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 115 | total time = 0.028133 s | path = 1 4 5 2 3 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 237 | total time = 0.877873 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 2 7 12 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 260 | total time = 14.896245 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 115 | total time = 0.015597 s | path = 1 4 5 2 3 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 237 | total time = 1.318591 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 2 7 12 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 260 | total time = 25.898208 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | RT = FALSE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 115 | total time = 0.044368 s | path = 1 4 5 2 3 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 237 | total time = 0.810943 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 2 7 12 | RT = TRUE
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+best path bound = 260 | total time = 15.320447 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | RT = TRUE

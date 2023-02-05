@@ -1,0 +1,17 @@
+best path bound = 278 | total time = 261.030000 s | path = 1 10 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | Mode = Serial
+best path bound = 281 | total time = 201.240000 s | path = 2 16 3 8 5 13 11 6 9 15 14 4 1 10 17 7 12 | Mode = Serial
+best path bound = 267 | total time = 82.090000 s | path = 3 16 2 12 7 17 8 5 13 11 6 9 15 14 4 1 10 | Mode = Serial
+best path bound = 286 | total time = 229.090000 s | path = 4 14 15 9 6 11 13 5 8 3 16 2 12 7 17 1 10 | Mode = Serial
+best path bound = 290 | total time = 187.820000 s | path = 5 13 11 6 9 15 14 4 1 10 17 8 3 16 2 7 12 | Mode = Serial
+best path bound = 291 | total time = 194.840000 s | path = 6 9 11 13 5 8 3 16 2 12 7 17 10 1 4 14 15 | Mode = Serial
+best path bound = 283 | total time = 272.950000 s | path = 7 12 3 16 2 17 8 5 13 11 6 9 15 14 4 1 10 | Mode = Serial
+best path bound = 285 | total time = 136.170000 s | path = 8 5 13 11 6 9 15 14 4 1 10 17 7 12 2 16 3 | Mode = Serial
+best path bound = 287 | total time = 209.200000 s | path = 9 6 11 13 5 8 3 16 2 12 7 17 10 1 4 14 15 | Mode = Serial
+best path bound = 260 | total time = 44.740000 s | path = 10 1 4 14 15 9 6 11 13 5 8 3 16 2 17 7 12 | Mode = Serial
+best path bound = 290 | total time = 197.790000 s | path = 11 6 9 15 14 4 1 10 17 8 5 13 3 16 2 7 12 | Mode = Serial
+best path bound = 260 | total time = 78.840000 s | path = 12 7 17 2 16 3 8 5 13 11 6 9 15 14 4 1 10 | Mode = Serial
+best path bound = 293 | total time = 193.620000 s | path = 13 5 8 17 7 12 2 16 3 11 6 9 15 14 4 1 10 | Mode = Serial
+best path bound = 291 | total time = 248.980000 s | path = 14 15 4 1 10 17 8 5 6 9 11 13 3 16 2 7 12 | Mode = Serial
+best path bound = 282 | total time = 277.430000 s | path = 15 14 4 1 10 17 8 5 6 9 11 13 3 16 2 7 12 | Mode = Serial
+best path bound = 284 | total time = 160.740000 s | path = 16 2 3 8 5 13 11 6 9 15 14 4 1 10 17 7 12 | Mode = Serial
+best path bound = 276 | total time = 121.810000 s | path = 17 7 12 2 16 3 8 5 13 11 6 9 15 14 4 1 10 | Mode = Serial
