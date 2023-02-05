@@ -5,11 +5,11 @@
 #include <time.h>
 #include <mpi.h>
 
-#define MAX_CITIES 20
-#define INFINITE INT_MAX
-#define ROOT 0
+#define MAX_CITIES 20   // maximum number of cities that can be considered
+#define INFINITE INT_MAX    // a large constant used to initiation
+#define ROOT 0  // define what is the ROOT processor of the program
 
-#define LOOP_1ST 0 ////set 1 to eneble loop all
+#define LOOP_1ST 0 ////set 1 to eneble loop all start city from START_CITIES to n
 int START_CITIES=0; //start with 0 to n-1
 
 /* MODE_SEND 0 = send Dist by Bcast       | MODE_SEND 1 = send Dist by Ibcast
@@ -19,12 +19,11 @@ int START_CITIES=0; //start with 0 to n-1
 /* MODE_GATHER 0 = gather by Allgather | MODE_GATHER 1 = gather by Send & Recv */
 #define MODE_GATHER 0
 
-#define PRINT_ALL 0 //set 1 to eneble print all
-#define SAVE_CSV 1
-#define NUM_RESULT 7
+#define PRINT_ALL 0 //set 1 to eneble print the detial of result (each start_city)
+#define SAVE_CSV 1  //set 1 to enable CSV save function
+#define NUM_RESULT 7    //number element in array of result
 
-//path variable
-int n;
+int n;  // number of cities
 int (*dist)[MAX_CITIES], (*best_path)[MAX_CITIES];
 int *best_path_bound;
 

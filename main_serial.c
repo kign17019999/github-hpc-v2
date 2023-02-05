@@ -35,17 +35,17 @@ int main(int argc, char *argv[]) {
 
     /* retrive city information */
     char* file_path;
-    if(argc >=3 && strcmp("-i", argv[1]) == 0){
+    if(argc >=3 && strcmp("-i", argv[1]) == 0){ // check there are enough input to consider or not
         char* myArg = argv[2];
-        while (myArg[0] == '\'') myArg++;
-        while (myArg[strlen(myArg)-1] == '\'') myArg[strlen(myArg)-1] = '\0';;
+        while (myArg[0] == '\'') myArg++;   // filter some input mistake at the front of file name
+        while (myArg[strlen(myArg)-1] == '\'') myArg[strlen(myArg)-1] = '\0';  // filter some input mistake at the last of file name
         file_path = myArg;
-    }else{
+    }else{  // if there are no input of filename
         char *df_file = "input/dist13";
         printf("[System] The default file (%s) will be used if no input is provided  \n", df_file);
         file_path  = df_file;
     }
-    get_cities_info(file_path);
+    get_cities_info(file_path); // compute saving data from file to program
     
     /* initial path and vistied array */
     int *path = malloc(MAX_CITIES * sizeof(int));
@@ -110,26 +110,27 @@ void get_cities_info(char* file_path) {
     level: current level (city) of visiting */
 void branch_and_bound(int *path, int path_bound, int *visited, int level) {
     if (level == n) {   // check that the travelling is going to the end of path or not
-        if (path_bound < best_path_bound) {
+        if (path_bound < best_path_bound) { //check the new path is better than the previous best or not
             best_path_bound = path_bound;
             for (int i = 0; i < n; i++) best_path[i] = path[i]+1;
         }
     } else {
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {  // check there are unvisited city persist or not
-                path[level] = i;
-                visited[i] = 1;
-                int new_bound = path_bound + dist[i][path[level - 1]];
+                path[level] = i;    // mark what is the path we are going to evaluate
+                visited[i] = 1; // mark the currect city is visited
+                int new_bound = path_bound + dist[i][path[level - 1]]; // calculate new bound
                 if (new_bound < best_path_bound) branch_and_bound(path, new_bound, visited, level + 1);
-                visited[i] = 0;
+                visited[i] = 0; // reset the visited index, prepare to check new unvisited city
             }
         }
     }
 }
-
+/*  This function saves WSP results to a .csv file. */
 void save_result(char* dist_file, double computing_time) {
+    /* make best path into a double format that can save into the same result array which is a double type*/
     double double_path = power(10, 2*n)*404;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){ // add each city order into a large number sequently
         double_path+=power(10, (n-i-1)*2)*best_path[i];
     }
 
@@ -140,10 +141,10 @@ void save_result(char* dist_file, double computing_time) {
 
     char* fileName="result_serial.csv";
     file = fopen(fileName, "r"); // open the file in "read" mode
-    if (file == NULL) {
+    if (file == NULL) { // check there are existing file or not
         file = fopen(fileName, "w"); //create new file in "write" mode
         fprintf(file, "date-time, dist file, computing time (s), best_bound, best_path\n"); // add header to the file
-    } else {
+    } else {       // if no any existing file >> create the new file
         fclose(file);
         file = fopen(fileName, "a"); // open the file in "append" mode
     }
@@ -155,6 +156,7 @@ void save_result(char* dist_file, double computing_time) {
     fclose(file); // close the file
 }
 
+/* This function calculates the power of a base number to an exponent.*/
 double power(double base, int exponent) {
     double result_power = 1;
     while (exponent > 0) {
